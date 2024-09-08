@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+</head>
+<body>
+
+    <h1>SIGNUP !</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    
+    {{form}}
+
+    <input type="submit" value="SIGNUP">
+    {% comment %}
+
+    <div class ='row'>
+        <div class="col-lg-6">
+            <label > Name</label>
+            {{form.username}}
+            <label > Email</label>
+            {{form.email}}
+        </div>
+        <div class="col-lg-6">
+            <label > Password</label>
+            {{form.password1}}
+            <label > Password2</label>
+            {{form.password2}}
+            <input type="submit" value="SIGNUP">
+        </div>
+    </div>
+        
+    {% endcomment %}
+        
+   
+ 
+</form>
+    
+</body>
+</html>
